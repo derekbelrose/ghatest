@@ -1,0 +1,12 @@
+name: cronjob
+on:
+   schedule:
+      - cron: 
+ 
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    secrets: inherit
+    steps:
+      - run: echo ${{ env.TEST }}
+      
