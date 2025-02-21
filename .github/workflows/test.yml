@@ -6,7 +6,6 @@ on:
 jobs:
   test:
     runs-on: ubuntu-latest
-    secrets: inherit
     steps:
-      - run: echo ${{ env.TEST }}
+      - run: echo ${{ vars.TEST }}
       
