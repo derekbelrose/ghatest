@@ -9,4 +9,6 @@ jobs:
     steps:
       - name: Echo repository variable
         run: |
-          echo "${{ vars.TEST }}"
+          echo "$REPOSITORY_VAR"
+        env:
+          REPOSITORY_VAR: ${{ vars.TEST }}
